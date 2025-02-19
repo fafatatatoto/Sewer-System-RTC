@@ -1,0 +1,16 @@
+
+algorithm_config:
+  env_id: "sewer-v6"  # The environment id of the task
+  total_timesteps: 1000000  # Total timesteps of the experiments
+  buffer_size: 1000000  # The replay memory buffer size
+  gamma: 0.75  # The discount factor gamma
+  tau: 0.005  # Target smoothing coefficient (default: 0.005)
+  batch_size: 128  # The batch size of sample from the replay memory
+  learning_starts: 2000  # Timestep to start learning
+  policy_lr: 3e-4  # Learning rate of the policy network optimizer
+  q_lr: 1e-3  # Learning rate of the Q network optimizer
+  policy_frequency: 2  # Frequency of training the policy (delayed)
+  target_network_frequency: 2  # Frequency of updates for the target networks
+  noise_clip: 0.5  # Noise clip parameter of the Target Policy Smoothing Regularization
+  alpha: 0.2  # Entropy regularization coefficient
+  autotune: true  # Whether to autotune hyperparameters
