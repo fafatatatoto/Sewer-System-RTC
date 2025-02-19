@@ -13,6 +13,6 @@ The goal is to provide operational suggestions for sewer systems and notch up de
 - Comparison between rule-based control and reinforcement learning control
 - reinforcement learning model needs to learn a policy that not only optimizes for ultimate objective but also defers to the on-site facility limitations (pumps, sumps, etc).
 
-
+<img src="plot/wet_day/20230630_0550_plot_o0.png" alt="替代文字" width="300" height="200"/>
 ![123123123](plot/wet_day/20230630_0550_plot_o0.png)
   
