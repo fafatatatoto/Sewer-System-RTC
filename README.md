@@ -1,7 +1,7 @@
 # Sewer-System-RTC
 
-> Real-time control (RTC) in urban sewer system using rule-based control and reinforcement learning method.
->
+Real-time control (RTC) in urban sewer system using rule-based control and reinforcement learning method.
+
 ## **Purpose**
 Due to the corroded and aging sewage pipelines, rainfall invasion to the urban sewer system seems inevitable. Therefore, sewer overflows from manholes are likely without appropriate control measures. With the burgeoning development of Internet of Things (IoT), urban sewer system can now be faciliated with sensors and activators connected through the internet so that remote and automated control is becoming increasingly feasible. Thus, this repo aims to leverage IoT technology in sewer system and develop two types of models:
 - Rule-based model: leveraging predefined control rules for decision making.
