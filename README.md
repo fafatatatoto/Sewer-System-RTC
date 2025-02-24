@@ -12,8 +12,16 @@ The goal is to provide operational suggestions for sewer systems and notch up de
 
 ## **Feature**
 - Comparison between rule-based control and reinforcement learning control
-- Reinforcement learning model needs to learn a policy that not only optimizes for ultimate objective but also defers to the on-site facility limitations (pumps, sumps, etc).
-- Reward engineering: tuning the weights among multiple objectives in order to ensure the effectiveness of agent's policy and optimize its performance.
+- Reinforcement learning model needs to learn a policy that not only optimizes for ultimate objective but also comply with the on-site facility limitations (pumps, sumps, etc).
+- Reward engineering: design the reward function for each objective and tune the weights among goals in order to ensure the effectiveness of agent's policy and optimize its performance.
 
+### **Reeward design**
+The objectives includes water level objective, pump operation objective, gate operation objective and power cost objective. Among them, water level objective is the main goal which is intended to maintain the water level in a fixed range, the pump and gate operation objecctive are meant to evaluate the compliance of rules of the on-site facilities, and the power objective is for costing the power cost of operating pumps.  
+The result shows that the 
+
+
+## **Results**
+- Reinforcement learning demonstrates the superior adaptability and robustness
+- 
 <img src="plot/wet_day/20230630_0550_plot_o0.png" alt="not shown" width="410" height="380"/>
   
