@@ -16,14 +16,15 @@ The goal is to provide operational suggestions for sewer systems and notch up de
 - Reward engineering: design the reward function for each objective and tune the weights among goals in order to ensure the effectiveness of agent's policy and optimize its performance.
 
 ### **Reward design**
-The objectives includes water level objective, pump operation objective, gate operation objective and power cost objective. Among them, water level objective is the main goal which is intended to maintain the water level in a fixed range, the pump and gate operation objecctive are meant to evaluate the compliance of rules of the on-site facilities, and the power objective is for costing the power cost of operating pumps.  
-- Reward design of water level objective: once the water level exceeds the acceptable range, agent will suffer from a large negative reward.
-- Reward design of pump and gate operation objective: becasue sometime it's inevitable to breach the rules (e.g. the coming of surge), this part uses frequency to calculate the punishment (if the agent violate the rules more frequent then the penalty would be greater) which enables agent to infringe the rules for greater good but not too often.
-- Reward design of power cost objective: due to the variability of power price, the reward is designed to be the electric power in the power of a coefficient proportional to electricity price. 
+The objectives includes water level objective, pump operation objective, gate operation objective and power cost objective. Among them, water level objective is the main goal which is intended to maintain the water level of the pump station's sump in a fixed range, the pump and gate operation objecctive are meant to evaluate the compliance of rules of the on-site facilities, and the power objective is for costing the power cost of operating pumps.  
+- Water level objective: once the water level exceeds the acceptable range, agent will suffer from a large negative reward.
+- Pump and gate operation objective: becasue sometime it's inevitable to breach the rules (e.g. the coming of surge), this part uses frequency to calculate the punishment (if the agent violate the rules more frequent then the penalty would be greater) which enables agent to infringe the rules for greater good but not too often.
+- Power cost objective: due to the variability of power price, the reward is designed to be the electric power in the power of a coefficient proportional to electricity price. 
 
 
 ## **Results**
-- Reinforcement learning demonstrates the superior adaptability and robustness
-- 
+- Both rule-based and reinforcement leanrning methods are able to achieve the main goal (maintianing water level), and rarely to break the facility operation rules. 
+- In the case of input uncertainty, reinforcement learning demonstrates the superior adaptability and robustness with smaller range of the prediction interval
+- With proper reward engineering, even though some objectives are contradicted with each other, RL can learn the trade-off among them, and choose the suitable measures to adjust if necessary. 
 <img src="plot/wet_day/20230630_0550_plot_o0.png" alt="not shown" width="410" height="380"/>
   
