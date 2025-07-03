@@ -16,7 +16,8 @@ The goal is to provide operational suggestions for sewer systems and notch up de
 - Reward engineering: design the reward function for each objective and tune the weights among goals in order to ensure the effectiveness of agent's policy and optimize its performance.
 
 ### **Action space design**
- - Since the ttried both discrete and continuous action space, 
+ - The action is to tweak the power rate of pumps, since discrete actions can't show the relationship among action choices, then I chose continuous action space and discretized it to represent different discrete choices with ordinal relationship.
+
 
 ### **Reward design**
 The objectives includes water level objective, pump operation objective, gate operation objective and power cost objective. Among them, water level objective is the main goal which is intended to maintain the water level of the sump in the pump station in a fixed range, the pump and gate operation objecctive are meant to evaluate the compliance of rules of the on-site facilities, and the power objective is to assess and reduce the power cost of operating pumps.  
