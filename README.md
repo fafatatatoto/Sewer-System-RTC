@@ -30,5 +30,5 @@ The objectives includes water level objective, pump operation objective, gate op
 - Both rule-based and reinforcement leanrning methods are able to achieve the main goal (maintianing water level), and rarely to break the facility operation rules. 
 - In the case of input uncertainty, reinforcement learning demonstrates the superior adaptability and robustness with smaller range of the prediction interval
 - With proper reward engineering, even though some objectives are contradicted with each other, RL can learn the trade-off among them, and choose the suitable measures to adjust if necessary. 
-<img src="plot/wet_day/20230630_0550_plot_o0.png" alt="not shown" width="410" height="380"/>
+<img src="plot/wet_day/20230630_0550_plot_o0.png" alt="not shown" width="820" height="760"/>
   
